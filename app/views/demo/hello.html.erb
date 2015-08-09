@@ -1,0 +1,12 @@
+<h1>Demo#Hello</h1>
+<p>Hello from index</p>
+
+<%= link_to('Hello with parameters 20', {:action => 'hello', :page => 5, :id => 20}) %><br>
+
+<%= link_to('Hello with parameters 199', {:action => 'hello', :page => 10, :id => 199}) %>
+
+<br>
+ID: <%= params[:id] %> read as a symbol :id<br>
+ID: <%= @id %> read as an instance variable @id<br>
+Page:  <%= @page %><br>
+Next page = <%= @page + 1 %><br>
